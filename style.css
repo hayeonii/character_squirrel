@@ -1,6 +1,7 @@
 /* setting */
 :root {
     --pri: #d1c2a5;
+    --sec: #8b6855;
 
 }
 
@@ -29,17 +30,6 @@ body {
     height: 350px;
 }
 
-.squirrel .face {
-    position: absolute;
-    bottom: 0;
-    left: 75px;
-    width: 300px;
-    height: 250px;
-    border-radius: 70% 70% 45% 45%;
-    background: var(--pri);
-    border: 8px solid #5e473a;
-}
-
 .squirrel .ear {
     position: absolute;
     width: 110px;
@@ -57,4 +47,49 @@ body {
 .squirrel .ear.right {
     top: 90px;
     right: 55px;
+}
+
+.squirrel .face {
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+    width: 300px;
+    height: 250px;
+    border-radius: 70% 70% 45% 45%;
+    background: var(--pri);
+    border: 8px solid #5e473a;
+}
+
+.squirrel .face .head {
+    position: relative;
+    width: 140px;
+    height: 100px;
+    top: 0;
+    left: 70px;
+}
+
+.face .head .line {
+    position: absolute;
+    width: 40px;
+    height: 90px;
+    background: var(--sec);
+    border: 5px solid #5e473a;
+}
+
+.face .head .line.left {
+    top: 0;
+    left: 0;
+    border-radius: 50% 0 40% 40%;
+}
+
+.face .head .line.middle {
+    top: 0;
+    left: 50px;
+    border-radius: 10% 10% 40% 40%;
+}
+
+.face .head .line.right {
+    top: 0;
+    right: 0;
+    border-radius: 0 50% 40% 40%;
 }
