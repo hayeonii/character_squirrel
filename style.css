@@ -93,3 +93,41 @@ body {
     right: 0;
     border-radius: 0 50% 40% 40%;
 }
+
+.face .eyebrow {
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background: #5e473a;
+    border-radius: 20%;
+}
+
+.face .eyebrow.left {
+    top: 110px;
+    left: 40px;
+    transform: rotate(10deg);
+}
+
+.face .eyebrow.right {
+    top: 110px;
+    right: 40px;
+    transform: rotate(-10deg);
+}
+
+.face .eye {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #5e473a;
+    border-radius: 50%;
+}
+
+.face .eye.left {
+    left: 65px;
+    top: 135px;
+}
+
+.face .eye.right {
+    right: 65px;
+    top: 135px;
+}
