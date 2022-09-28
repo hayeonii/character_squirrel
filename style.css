@@ -23,7 +23,6 @@ body {
 }
 
 .squirrel {
-    background-color: lightcoral;
     position: relative;
     margin: 100px auto;
     width: 450px;
@@ -123,11 +122,21 @@ body {
 }
 
 .face .eye.left {
-    left: 65px;
     top: 135px;
+    left: 65px;
 }
 
 .face .eye.right {
-    right: 65px;
     top: 135px;
+    right: 65px;
+}
+
+.face .nose {
+    position: absolute;
+    top: 165px;
+    left: 130px;
+    width: 25px;
+    height: 15px;
+    background: #5e473a;
+    border-radius: 30px;
 }
