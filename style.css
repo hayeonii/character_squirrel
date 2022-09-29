@@ -1,5 +1,5 @@
 /* animation */
-@keyframes 얼굴 {
+/* @keyframes 얼굴 {
     0% {
         transform: scale(0.8);
     }
@@ -7,10 +7,6 @@
     100% {
         transform: scale(1.2) rotate(-20deg);
     }
-
-    /* 100% {
-        transform: scale(0.8) rotate(0deg);
-    } */
 }
 
 @keyframes 눈썹왼쪽 {
@@ -30,6 +26,12 @@
         transform: scale(1.3) rotate(-20deg);
     }
 }
+
+@keyframes 눈 {
+    100% {
+        transform: scale(1.3);
+    }
+} */
 
 /* setting */
 :root {
@@ -155,6 +157,7 @@ body {
     height: 30px;
     background: #5e473a;
     border-radius: 50%;
+    animation: 눈 3s infinite alternate;
 }
 
 .face .eye.left {
@@ -165,6 +168,43 @@ body {
 .face .eye.right {
     top: 135px;
     right: 65px;
+}
+
+.twinkle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+
+}
+
+.twinkle.left {
+    top: 137px;
+    left: 67px;
+}
+
+.twinkle.right {
+    top: 137px;
+    right: 67px;
+}
+
+.twinkle .one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.twinkle .two {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
 }
 
 .face .nose {
