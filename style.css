@@ -31,6 +31,17 @@
     100% {
         transform: scale(1.3);
     }
+}
+
+@keyframes 눈반짝이 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+        transform: scale(1.3);
+    }
 } */
 
 /* setting */
@@ -174,7 +185,7 @@ body {
     position: absolute;
     width: 25px;
     height: 25px;
-
+    animation: 눈반짝이 3s infinite alternate;
 }
 
 .twinkle.left {
@@ -215,4 +226,22 @@ body {
     height: 15px;
     background: #5e473a;
     border-radius: 30px;
+}
+
+.face .blush {
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    background: #ef8989;
+    border-radius: 45%;
+}
+
+.face .blush.left {
+    bottom: 40px;
+    left: 35px;
+}
+
+.face .blush.right {
+    bottom: 40px;
+    right: 35px;
 }
